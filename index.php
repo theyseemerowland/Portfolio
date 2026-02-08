@@ -157,7 +157,7 @@ if (isset($_GET['telemetry'])) {
         <div class="status-label">(CPU)</div>
         <div class="bar-container"><div id="cpu-bar" class="bar-red"></div></div>
         
-        <div class="status-label">(RAM)</div>
+        <div class="status-label">Armor (RAM)</div>
         <div class="bar-container"><div id="ram-bar" class="bar-blue"></div></div>
         <div id="ram-text" style="font-family: 'Share Tech Mono'; font-size: 0.8rem; text-align: center; color: #000;">0.00 / 11.23 GB</div>
         
