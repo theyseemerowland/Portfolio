@@ -74,6 +74,7 @@ if (isset($_GET['telemetry'])) {
             .id-photo { width: 180px; height: 180px; margin: 0 auto 20px auto; }
             .grid-2 { grid-template-columns: 1fr; gap: 10px; } 
             iframe { transform: scale(0.7); transform-origin: center; }  } </style> </head> <body>
+            
             <div class="control-panel"><button onclick="toggleDossier()">[ CYCLE_DOSSIER ]</button></div>
             <div class="dossier-wrapper">
             <div class="folder" id="p1">
@@ -113,23 +114,35 @@ if (isset($_GET['telemetry'])) {
         </main>
         <aside class="sidebar">
             <div class="id-photo"><img src="images/TimothyRowland.png" alt="Agent Photo"></div>
-            <div class="status-label">Live Audit</div><div style="font-family:'Share Tech Mono'; font-size:0.8rem;">I leverage LLM temperature to offload semantic overhead and accelerate audit cycles. With 5+ years in the stack, I focus on architectural logic while utilizing AI as a high-speed linter for 144-hour deployment sprints.</div> </aside>
+            <div class="status-label">Live Audit</div><div style="font-family:'Share Tech Mono'; font-size:0.8rem;">Auditing Information</div> </aside>
             <footer class="footer">Timothy Rowland // Infrastructure // PAGE 2</footer> </div>
             <div class="folder page-hidden" id="p3">
             <header class="header">Timothy Rowland | Hardware & Simulation</header>
             <main class="main"> <h2>HARDWARE LAB</h2>
+            <div>Optiplex Specifications:</div>
+            <ul style="list-style-type: none; padding-left: 0; font-family: 'Share Tech Mono', monospace;">
+            <li>> AM4 Motherboard</li> 
+            <li>> 500w Power Supply </li>
+            <li>> NVIDIA GTX 980 (Secured Storage)</li>
+            <li>> 16GB DDR4 RAM (In-Transit)</li>
+            <li>> AMD Ryzen 3 2200G (4C/4T @ 3.7GHz)</li>
+            </ul>
+            Images:
             <div class="grid-2">
                 <a href="images/Optiplex790Before.jpg" target="_blank" class="menu-item">OPTIPLEX_790_BASE</a>
                 <a href="images/optiplex-wip.png" target="_blank" class="menu-item">OPTIPLEX_790_WIP</a>
-                <a href="images/optiplex-790.png" target="_blank" class="menu-item">OPTIPLEX_790_BACKPANEL</a> </div>
+                <a href="images/optiplex-790.png" target="_blank" class="menu-item">OPTIPLEX_790_BACKPANEL</a> </div><br>
             <h2>GAME DEVELOPMENT</h2>
             <div style="border:2px solid #000; padding:15px; font-family:'Share Tech Mono'; font-size:0.85rem;">
                 PROJECT: SPACE INVADERS<br>ENGINE: UNITY ENGINE<br>STATUS: DEPLOYMENT_READY</div> <br>
-           <iframe frameborder="0" src="https://itch.io/embed/4272643?linkback=true&amp;border_width=2&amp;dark=true" width="554" height="169"><a href="https://theyseemerowland.itch.io/space-invaders">Space Invaders by theyseemerowland</a></iframe>
-            <button onclick="toggleDossier()" class="menu-item" style="margin-top:20px;">[[ RETURN_TO_START ]]</button></main>
+            <div class="game-container">
+            <iframe frameborder="0" src="https://itch.io/embed/4272643?linkback=true&amp;border_width=2&amp;dark=true">
+            <a href="https://theyseemerowland.itch.io/space-invaders">Space Invaders by theyseemerowland</a>
+            </iframe>
+        </div>            <button onclick="toggleDossier()" class="menu-item" style="margin-top:20px;">[[ RETURN_TO_START ]]</button></main>
         <aside class="sidebar">
             <div class="id-photo"><img src="images/TimothyRowland.png" alt="Agent Photo"></div>
-            <div class="status-label">PROJECTS</div><div style="font-family:'Share Tech Mono'; font-size:0.8rem;">The artwork on the Dell Optiplex 790 was done by my brother and I. I am really proud of my Unity game, simple as it may be, this project represents a significant milestone in my development cycle. I hope you enjoy what I have presented! I sincerely hope you enjoy the rest of your day, who ever you may be. Thank you for taking the time to view my work!</div> </aside>
+            <div class="status-label">PROJECTS</div><div style="font-family:'Share Tech Mono'; font-size:0.8rem;">The here is my current project: The Dell Optiplex 790. This project contains a custom white chassis paint with custom artwork on the front and backplate. I am really proud of my Unity game, simple as it may be, this project represents a significant milestone in my development cycle. I hope you enjoy what I have presented! I sincerely hope you enjoy the rest of your day, who ever you may be. Thank you for taking the time to view my work!</div> </aside>
         <footer class="footer">Timothy Rowland // Projects // PAGE 3</footer></div></div> <script>
         let current = 1;
         function toggleDossier() {
